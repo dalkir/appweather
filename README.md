@@ -1,6 +1,6 @@
 # 🌦️ Mini Weather App (React + Tailwind + React Query)
 
-A small and responsive weather forecast application built with **React**, **Vite**, **TailwindCSS**, and **TanStack React Query**.  
+A small weather application built with **React**, **Vite**, **TailwindCSS**, and **TanStack React Query**.
 This project was created as part of a frontend coding test and demonstrates clean architecture, modular design, and API integration using modern React tooling.
 
 ---
