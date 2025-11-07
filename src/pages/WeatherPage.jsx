@@ -4,6 +4,7 @@ import { cities } from "../services/weatherService";
 import CityTabs from "../components/CityTabs";
 import WeatherCard from "../components/WeatherCard";
 import WeatherDayHours from "../components/WeatherDayHours";
+import WeatherDaily from "../components/WeatherDaily";
 
 export default function WeatherPage() {
   const [currentCity, setCurrentCity] = useState(cities[0]);
@@ -25,6 +26,15 @@ export default function WeatherPage() {
             </div>
             <WeatherDayHours isLoading={isLoading} data={data?.forecast} />
           </div>
+        </div>
+      </div>
+
+      <div className="min-w-xl max-w-full h-full mt-4 mb-4">
+        <div className="bg-white shadow-md rounded-2xl p-4 overflow-x-scroll">
+          <div className="text-xl font-bold flex justify-center">
+            Next 5 Days
+          </div>
+          <WeatherDaily isLoading={isLoading} data={data?.forecast} />
         </div>
       </div>
     </div>
